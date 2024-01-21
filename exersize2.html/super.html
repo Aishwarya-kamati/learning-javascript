@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class employee{
+            constructor(name,number){
+                this.name=name;
+                this.number=number;
+            }
+            login(){
+                console.log(this.name+"login in")
+            }
+            logout(){
+                console.log(this.name+"login out")
+            }
+           
+        }
+        class programer extends employee{
+            constructor(d){
+                super();
+                console.log(d)
+                // this.name=name;
+                // this.number=number;
+                // console.log(this.name)
+                // super("aishwarya")
+                // this.d=d;
+                // console.log(this.d)
+            }
+          sumittion(d){
+                console.log("subitted the project"+this.d );
+            }  
+        }
+        // let p=new programer();
+        // p.sumittion("2/4/6");
+        let a=new programer();
+        a.sumittion("3/5/7");
+
+
+        //perent constructore acess super can use
+        //if u send the args to the perent and that is used in the child method and u clled that perent constructore it will not get the values which will be say that its undifiened
+
+        //if u call the super with an args of perent we can use that name in the child method by this 
+        //if u created a new constructore u must call the supre without any use of the constructore of perent 
+    </script>
+</body>
+</html>

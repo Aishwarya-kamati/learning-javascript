@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class  raylway{
+            submit(){
+                alert(`form is submited by the `+this.name+"with the number"+this.raylwaynum)
+            }
+            cancel(){
+                alert(this.name+"is canceled the form"+"with railwaynumber"+this.raylwaynum )
+            }
+            fill(name,raylwaynum){
+                 this.name=name;
+                 this.raylwaynum=raylwaynum;
+            }  
+        }
+        let rohan=new raylway();
+        rohan.fill("rohan",122333);
+        rohan.submit();
+       
+        let aishu=new raylway();
+        aishu.fill("aishwarya",3333333);
+        aishu.submit();
+        let aishu1=new raylway();
+        aishu1.fill("aishwarya",3366633);
+        aishu1.cancel();
+
+    </script>
+</body>
+</html>

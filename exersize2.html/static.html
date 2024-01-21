@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+            constructor(name){
+                this.name= animal.capitalization(name);
+            }
+            walk(){
+                alert("animal is walking "+this.name);
+            }
+            static capitalization(name){
+             return  name.charAt(0).toUpperCase()+name.substr(1,name.length);
+            }
+        }
+        let j=new animal("jalk");
+        j.walk();
+    // let res = j.capitalization("harry");//output===error
+    // console.log(res);   //plz undersatnd we cant be called with an object of sattic calss 
+
+        //static method u have to call with class name it self not with the this and not with an object
+    </script>
+</body>
+</html>

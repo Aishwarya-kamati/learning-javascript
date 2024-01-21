@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bulb" class="container glow-bulb">
+
+    </div>
+    <!-- <button onclick="alert('you submit')">submit</button>
+    <button onclick="alert('your script is running')">running</button> -->
+   <!-- <!-- <a href="https://www.google.com/"><button>google</button></a>
+   <a href="https://www.twiter.com/"><button>twiter</button></a>
+   <a href="https://www.instagram.com/"><button>instagram</button></a> -->
+
+<!-- button  without href
+ <button id="google">google</button> -->
+<script>
+    // document.getElementById("google").addEventListener("click",()=>{
+    //     window.location="https://www.google.com/";
+
+    // })
+
+
+bulb 
+setInterval( async() => {
+    document.querySelector("#bulb").classList.toggle("glow-bulb");
+},300);
+
+
+</script>
+
+</body>
+</html>

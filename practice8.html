@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="home">home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>blog</li>
+        </ul>
+    </nav>
+   <!-- <table>
+    <caption>student</caption>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        
+    </tr>
+   <!-- </table> -->//in view source code tbody is not added by default bec it is the row code .but in inspect the code it will contain the tbody// -->
+</body>
+<script>
+//     let container=document.body.getElementsByTagName("nav");
+    
+//    console.log(container.matches("id"))
+ document.body.getElementsByTagName("ul")[0].firstElementChild.style.color="red";
+ document.body.getElementsByTagName("ul")[0].lastElementChild.style.color="green";
+
+ Array.from(document.body.getElementsByTagName("li")).forEach(elemet=(e)=>{
+    e.style.background="cyan";
+ })
+
+// document.body.getElementsByTagName("li")[0].firstElementChild.style.color="red";
+// document.body.getElementsByTagName("nav")[0].style.background="black";
+// document.body.getElementsByTagName("li")[1].firstElementChild.style.color="white";
+// document.body.getElementsByTagName("li")[2].firstElementChild.style.color="white";
+// document.body.getElementsByTagName("li")[3].firstElementChild.style.color="white"; 
+
+</script>
+</html>

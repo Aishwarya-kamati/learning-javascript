@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let loadscript=(src)=>{
+            return  new Promise((resolve, reject) => {
+                let script=document.createElement("script");
+                script.src=src;
+                script.type="text/javascript";
+                document.head.appendChild(script);
+            script.onload=()=>{
+                resolve(src);
+            }
+            })   
+        }
+
+    //    loadscript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js").then((v)=>{
+    //     console.log(v);
+    //    });
+
+//  let a=   loadscript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js");
+//  a.then((v)=>{
+//     console.log(v);
+//  })
+
+       
+        // let myfun=async()=>{
+        //     console.log(new Date().getMinutes());
+        //   let res = await  loadscript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js");
+        //   console.log(res);
+        //   console.log(new Date().getMinutes());
+        // }
+        // myfun();
+
+        
+
+
+      
+    </script>
+</body>
+</html>

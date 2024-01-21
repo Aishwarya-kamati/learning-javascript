@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container"  id="box"  data-game="mario" data-player="sachin">
+    hello conatiner
+</div>
+    <script>
+       let el= document.getElementById("box")
+     console.log( el.getAttribute("class"));
+     console.log(el.hasAttribute("class"));
+     console.log(el.hasAttribute("span"));
+     console.log(el.setAttribute("name","box1"));
+    //  console.log(el.setAttribute("hidden","true"))
+    
+
+    //alltribue
+    console.log(el.attributes);
+    // more then one class name or attribute
+    el.setAttribute("class","class1 class2 class3")
+    // el.removeAttribute("class"); it will remove al the //
+
+    //custom data or attribue asplayer like bellow
+    //   console.log(el.dataset)
+    console.log(el.dataset.game);
+    console.log(el.dataset.player);
+    </script>
+</body>
+</html>

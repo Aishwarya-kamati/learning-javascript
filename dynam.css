@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.dark-text{
+    color: black;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class inforamtion{
+            constructor(name){
+               this._name=name;
+            }
+            useranem(){
+                console.log(this._name);
+            }
+            get name(){
+                return this._name;
+            }
+            set name(ref){
+                this._name=ref;
+                console.log(this._name)
+            }
+        }
+        let i=new inforamtion("aishwarya");
+        i.useranem();
+        
+        
+        //let me set value for get
+        // console.log(i.name="mahadev");
+    </script>
+</body>
+</html>

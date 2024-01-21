@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+            constructor(name){
+                this._name=name;
+            }
+            fly(){
+                alert("i am flying on sky");
+            }
+            get name(){
+                return this._name;
+            }
+            set sam(refrename){
+                this._name=refrename;
+            }
+        }
+       
+        class rabit extends animal{
+            eat(){
+                console.log("eatting the carrot ");
+            }
+        }
+
+        let a=new animal("aishwarya");
+        let r=new rabit();
+        let c="harry";
+        console.log( a instanceof animal);
+        console.log(r instanceof rabit);//false
+        
+        a.sam="animal";
+    console.log(a.name);
+    </script>
+</body>
+</html>

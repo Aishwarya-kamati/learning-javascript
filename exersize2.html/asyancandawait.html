@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+//  async  function harry(){
+//     return "2";
+// }
+// harry().then(alert);
+
+//   async function aish(){
+//     return "2";
+//   }
+//    aish().then((v)=>{
+//     console.log(v);
+//    })
+
+// async function savita(){
+//     return "ist program is resolved";
+// }
+// savita().then(alert);
+
+// async function asynfun(){
+//     return "i am asyan"
+// }
+// asynfun().then(alert);
+
+// async function myfun(){
+//     return "222"
+// }
+// myfun().then((v)=>{
+//     console.log(v)
+// })
+//  async function fun(){
+//     let benglore= new Promise((resolve, reject) => {
+//           setTimeout(() => {
+//               resolve("22 dgree");
+//           }, 1000);
+//     })
+//     let kolkata=new Promise((resolve, reject) => {
+//         resolve("33 degree")
+//     })
+//     //normal
+//     // benglore.then((v)=>{
+//     //     console.log(v);
+//     // })
+//     // kolkata.then((v)=>{
+//     //     console.log(v);
+//     // })
+
+//     //using await
+//    let p1= await benglore;
+//    let p2= await kolkata;
+//    return [p1,p2];
+// }
+// let wether=fun();
+// console.log(wether);
+
+
+
+//2nd example
+// async function myfun(){
+//     return  new Promise((resolve, reject) => {
+//         resolve(33);
+//     })   
+// }
+// myfun().then((v)=>{
+//     console.log(v);
+// })
+
+//3rd example
+// async function friut(){
+//     let mango=new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("33 rupyee")
+//         }, 2000);
+//     })
+//     let apple= new Promise((resolve, reject) => {
+//        setTimeout(() => {
+//         resolve("55 rupyee");
+//        }, 3000);
+//     })
+//     let f1=await mango;
+//     let f2=await apple;
+//     return [f1,f2]; 
+// }
+// friut().then((v)=>{
+//     console.log(v);
+// })
+
+
+// async function hotel(){
+//     let hotel1= new Promise((resolve, reject) => {
+//           setTimeout(() => {
+//             resolve("sammera");
+//           }, 3000);
+//     })
+//     let hotel2=new Promise((resolve, reject) => {
+//        setTimeout(() => {
+//         resolve("aishwarya")
+//        }, 2000);
+//     })
+//     console.log("hotel 1 info");
+//     let p= await hotel1;
+//    console.log("hotel1",p);
+//    console.log("hotel 1 info");
+//     let p2=await hotel2;
+//     console.log("hotel 2",p2);
+//     return [p,p2];
+
+// }
+
+
+
+// let aishu= ()=>{
+//   console.log("i aishu putta");
+// }
+// aishu(); it is not await thr function bec it is not in async
+
+
+//let me try 2 async function in 1 function its also executre the both the function in the parallel mode
+
+
+// async function hotel(){
+//     let hotel1= new Promise((resolve, reject) => {
+//           setTimeout(() => {
+//             resolve("sammera");
+//           }, 3000);
+//     })
+//     let hotel2=new Promise((resolve, reject) => {
+//        setTimeout(() => {
+//         resolve("aishwarya")
+//        }, 2000);
+//     })
+//     console.log("hotel 1 info");
+//     let p= await hotel1;
+//    console.log("hotel1",p);
+//    console.log("hotel 1 info");
+//     let p2=await hotel2;
+//     console.log("hotel 2",p2);
+//     return [p,p2];
+
+// }
+
+// let aish= async()=>{
+//  console.log("hii aishu welcome to new hotels");
+// }
+
+// let main= async()=>{
+//       let a= await aish();
+//       let b= await  hotel().then((v)=>{
+//         console.log(v)
+//       });
+// }
+
+//  main();
+
+
+// let poo= async()=>{
+//    let p=   await new Promise((resolve) => {
+//        setTimeout(() => {
+//         resolve("resolved")
+//        }, 2000);
+//     })
+//     let p2= await new Promise((resolve) => {
+//        setTimeout(() => {
+//         resolve("resolved 1")
+//        }, 1000);
+//     }) 
+// }
+// poo();
+
+// async function foo() {
+//   const result1 = await new Promise((resolve) =>
+//     setTimeout(() => resolve("1")),
+//   );
+//   const result2 = await new Promise((resolve) =>
+//     setTimeout(() => resolve("2")),
+//   );
+// }
+// foo();
+
+function resolveAfter2Seconds() {
+  console.log("starting slow promise");
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("slow");
+      console.log("slow promise is done");
+    }, 2000);
+  });
+}
+
+function resolveAfter1Second() {
+  console.log("starting fast promise");
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("fast");
+      console.log("fast promise is done");
+    }, 1000);
+  });
+}
+
+async function sequentialStart() {
+  console.log("== sequentialStart starts ==");
+
+  // 1. Start a timer, log after it's done
+  const slow = resolveAfter2Seconds();
+  console.log(await slow);
+
+  // 2. Start the next timer after waiting for the previous one
+  const fast = resolveAfter1Second();
+  console.log(await fast);
+
+  console.log("== sequentialStart done ==");
+}
+
+    </script>
+</body>
+</html>

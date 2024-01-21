@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dynam.css">
+</head>
+<body>
+  <div id="first" class="yellow dark-text">
+    <span>i am span</span>
+  </div>  
+</body>
+<script>
+    //dynamicly changing the class with help of className
+    let f=document.getElementById("first");
+    f.className="red dark-text";
+
+   //classList to show all the list and we can add and remove and toggle the calsslist 
+   f.classList//full class are appear
+   f.classList.add("red");
+   f.classList.remove("yellow");
+   f.classList.contains("yellow");//false it removed by the remove method
+
+   //if it is thre say yes if it is not it say false
+   f.classList.toggle("red");
+           true
+    f.classList.toggle("red");
+           false 
+</script>
+</html>

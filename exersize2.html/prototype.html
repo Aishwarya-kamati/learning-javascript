@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+let a={
+  name:"aishwarya",
+  run:()=>{
+    alert("  self run");
+  }
+
+};
+let p={
+  // run:()=>{
+  //   alert("run");
+  // }
+}
+a.__proto__=p;
+p.__proto__={
+  rollnum:"22"
+}
+a.run();
+// p.run();
+console.log(a.rollnum);//dont do like u have to acess with a not p with a bec which is perent can acess the child not with child to perent
+  </script>
+</body>
+</html>

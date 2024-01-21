@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let option={
+            method: 'PUT',
+  body: JSON.stringify({
+    id: 1,
+    title: 'programing',
+    body: 'html',
+    userId: 101,
+  }),
+  headers: {
+    'Content-type': 'application/json',
+  },
+        }
+       let n= fetch('https://jsonplaceholder.typicode.com/posts/1',option)
+  n.then((response) => response.json())
+  .then((json) => console.log(json));
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let todo= async()=>{
+        let option={
+            method:"PUT",
+            headers:{"content-type":"application/json"},
+            body:JSON.stringify({
+                id: 1,
+              title: 'programing',
+               body: 'html',
+                 userId: 101, 
+            })
+         
+        }
+        let n=  await("https://jsonplaceholder.typicode.com/posts/1",option);
+           let responce= await n.JSON();
+           return responce;
+     
+       }
+
+        
+
+     let main1= async()=>{
+        let res=   await todo();
+        console.log(res);
+     }
+     main1();
+
+
+
+    </script>
+</body>
+</html>

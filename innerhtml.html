@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="spanid"><i>hey i am span</i></span>
+    <span id="spanhidden" hidden><i>hey i am span</i></span>
+    <script>
+    //  document.getElementById("spanid").innerHTML="hey i am changed this text with id";
+//    console.log( document.body.getElementsByTagName("span")[0].innerHTML="hey hello");
+// document.getElementById("spanid").innerHTML="<i>hey i am changed this text with id</i>";
+// document.getElementById("spanid").outerHTML="<i>hey i am changed this text with id</i>";
+// let doc=document.body.getElementsByTagName("span")[0];
+// console.log(doc);it will display as string
+// console.dir(doc); it will display as object and all property
+
+
+
+document.body.firstChild.nodeName
+"#text"
+
+document.body.firstElementChild.nodeName
+"SPAN"
+
+//innerhtml and outerhtml  (plz take an id from the getelmentbyid)  innerhtml is only for the elementnode not for the text and node
+// spanid.innerHTML
+// "<i>hey i am span</i>"
+// spanid.innerHTML="hey i am changed"
+// "hey i am changed"
+// spanid.outerHTML
+// '<span id="spanid">hey i am changed</span>'
+// spanid.outerHTML="<div>hiii</div>"
+// "<div>hiii</div>" 
+
+//accessing the value or data of the text or node these are not included inside the innerhtml and outter htnl
+// document.body.firstChild.nodeValue
+
+// document.body.firstChild.data;//if it is mt it will display as /n
+
+
+//textcontent will display the text of that element or node
+document.body.firstChild.textContent //it will display the textcontent of that element
+    </script>
+</body>
+</html>

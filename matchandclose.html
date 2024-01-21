@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="box">
+        <p>hello andi <span id="sp">hey i am inside the p tag</span></p>   
+    </div>
+</body>
+<script>
+  let match=document.getElementById("box");
+  console.log(match.matches(".container"));//true if it machews
+ let sp1=document.getElementById("sp");
+ console.log(sp1.closest("#sp"));
+//  console.log(match.contains(sp));sp is the element
+console.log(sp1.contains(sp1));
+  
+
+</script>
+</html>

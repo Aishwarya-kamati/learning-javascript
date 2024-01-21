@@ -1,0 +1,46 @@
+/* .card{
+    margin: 10px auto;
+    box-shadow: inset;
+    overflow: hidden;
+    
+    
+}
+
+.card img{
+    width: 400px;
+    height: 300px;
+   background-position: center;
+   background-size: cover;
+ 
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* *{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+ 
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+} */
+.container{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+.glow-bulb{
+    height: 100px;
+    width: 100px;
+    background-color: lawngreen;
+}

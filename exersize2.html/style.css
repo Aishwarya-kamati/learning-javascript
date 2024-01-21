@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 25px;
+}
+.yellow{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.text-dark{
+    color: black;
+    font-size: 23px;
+    font-family: sans-serif;
+}

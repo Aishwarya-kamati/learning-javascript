@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>override and super class</title>
+</head>
+<body>
+   <script>
+    class employee{
+        constructor(name){
+            this.name=name;
+            console.log(name);
+        }
+        login(){
+            console.log(`employees has logged in`);
+        }
+        logout(){
+            console.log(`employess has loged out`);
+        }
+        requestleaves(leaves){
+            console.log(` requested leaves ${leaves}`)
+        }
+        requestecoffe(x){
+            //overridding method
+        console.log(`requested coffies${x} ${this.name}`);
+    }
+    }
+   class programer extends employee{
+    // requestecoffe(x){
+    //     //its overridding method
+    //     console.log(`requested coffies${x+1} for employees only`);
+    // }
+      constructor(){
+        super("aishwarya");
+      }
+    requestecoffe(){
+        super.requestecoffe(4);
+    } 
+   }
+
+//    let e=new employee();
+//    e.login();
+//    e. requestleaves(3);
+//    let e=new employee();
+   let p=new programer();
+    //   e.login();
+    //    e. requestleaves(3);
+    //   e.requestecoffe(2);
+      p.requestecoffe();
+
+      
+       //super use we can call the perent in the child class
+      //perent obj child method acess madulla
+      //by overriding method on perent class we can acess the properties of child class with perent obj
+
+   </script> 
+</body>
+</html>

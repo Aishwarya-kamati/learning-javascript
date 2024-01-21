@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if u want to display the cookie or set the cookie
+        console.log(document.cookie);
+        // google
+        // document.cookie;
+        //     'APISID=U-z9l4upL390-Y4z/AJ--gkT8uWLLhcnR7;
+
+        //set the cookie
+        // document.cookie="name:aishu";
+        // console.log(document.cookie);
+        //if u can update and u can add the new cookie
+        // document.cookie="name:anushri";
+        // console.log(document.cookie)
+
+        //dynamicaly set the cookies
+        let key=prompt("enter a name");
+        let value=prompt("enter a vallue");
+        document.cookie=`$encodeURI{key}:$encodeURI{value}`;
+    //    ====== ans====
+//         name=aishwarya; address=kamati; $encodeURI{key}:$encodeURI{value} cookies.html:27:17
+// decodeURI(key);
+// ";;"
+
+// decodeURI(value)
+
+// ";"
+        console.log(document.cookie);//in update version it will take the special charecter
+
+        //encodethe value
+        // document.cookie=""
+    </script>
+</body>
+</html>

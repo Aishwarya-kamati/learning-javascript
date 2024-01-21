@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class railway{
+        constructor(name,num,address){
+            console.log(name+" "+num+" "+address);
+            this.name=name;
+            this.num=num;
+            this.address=address;
+        }
+        preview(){
+            console.log("your name is"+this.name+" "+" your train number"+this.num+" "+"your adress is"+this.address)
+        }
+        submit(){
+            alert(this.name+"submited the form with railwaynumber"+this.num)
+        }
+        cancel(){
+         
+            alert(this.name+"canceled the form ");
+            
+        }
+    }
+    let aish=new railway("aishwarya",12345,"raj nagar 2nd cross dharwad");
+    aish.submit();
+    aish.preview();
+    let manushri=new railway("manushri",44444,"raj nagar 3 rd cross dharwad");
+     manushri.cancel();
+   </script> 
+</body>
+</html>

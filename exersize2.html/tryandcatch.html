@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // try {
+        //      console.log(rahul)
+        // } catch (error) {
+        //       console.log(error,"bale bale");
+        // }
+
+        //try and catch is the synchronously executrd if it have an error inside the settimeout its not executed by the catch u have to define the anther handling try and catchninside the seetimeout as following
+ 
+        // try {
+        //     setTimeout(() => {
+        //         try {
+        //             console.log(hello);
+        //         } catch (error) {
+        //             console.log(error,"balee" ) 
+        //         }
+        //     }, 2000);
+        // } catch (error) {
+        //      console.log(error);
+        // }
+
+    //error and try
+
+//    try {
+//     throw  new TypeError("opps!");
+//    } catch ({name,message}) {
+//       console.log(name);
+//        console.log(message)
+//    }
+
+//    try {
+//   throw "Oops! this is not an Error object";
+// } catch (e) {
+//   if (!(e instanceof Error)) {
+//     e = new Error(e);
+//   }
+//   console.error(e);
+// }
+
+// try {
+//     throw "opps"
+// } catch (error) {
+//     console.log(error)
+// }
+// try {
+//     throw ReferenceError("opps!")
+// } catch (error) {
+//     // console.log(error);
+//     console.log(error.name);
+//     console.log(error.message)
+// }
+
+
+//if not have an error inside the try code will be exexuted as it is
+// try {
+//     let name="aishwarya";
+//     console.log(name)
+// } catch (error) {
+//     console.log(error)
+// }
+
+//example 2 in error and catch
+// try {
+//       throw new ReferenceError("thre is not something is not right");
+// } catch (error) {
+//       console.log(error.message)
+//       console.log(error.name)
+// }
+
+// try {
+//      let n=prompt("enter your age");
+//      n=Number.parseInt();
+//      console.log(typeof n)
+//      if(n>=125){
+//         throw new Error("i think most probably its not true");
+//      }
+// } catch (error) {
+//     console.log(error);
+// }
+// console.log("still script is running")
+
+//finaly use (if u have condition like if anything error may accure inside the catch then we can use the finally)
+// try {  
+//     console.log(a);
+// } catch (error) {
+//      console.log(error);
+//      console.log(b); 
+// }
+// finally{
+//     console.log("i am aishu very good girl")
+// }
+
+//we cant use finally without try and catch
+// let name="aishwarya";
+// console.log(name);
+// finally{
+// }
+
+//finally is used to close the file and which is usefull in 
+//if u return inside the try or catch it will run in anyway as example bellow
+// let fun=()=>{
+// try {
+//       console.log("hello ji");
+//       return true;//if any block of the code in try or catch finally always exexcuted
+// } catch (error) {
+//      console.log(error);
+//      console.log(e);
+// }
+// finally{
+//     console.log("plz close the file after work is done");
+// }
+  
+// }
+// console.log(fun());
+
+try {
+      console.log("hello ji");
+
+} catch (error) {
+     console.log(error);
+     console.log(e);
+}
+finally{
+    console.log("plz close the file after work is done");
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+            constructor(name,color){
+                this.name=name;
+                this.color=color;
+            }
+              eatting(){
+                console.log("eatting ")
+              }
+              drinking(){
+                console.log("drinking");
+              }
+        }
+        class monkey extends animal{
+            //without constructor ew are acessing the perent constructore
+            // constructor(pulm){
+            //      this.pulm=pulm;//its get an error thats is in the below
+            // }
+            jumping(){
+                console.log("jumping  " +this.name+" "+this.color);
+            }
+        }
+        let ani=new animal("fox","orange");
+        let moni=new  monkey("moni","black");
+        moni.jumping("plumnery");
+        moni.drinking();
+        ani.eatting();//child obj perent method acess with help of extends
+       ani.jumping();//Uncaught TypeError: ani.jumping is not a function
+
+//perent onj cant acess the method  of child
+      // ReferenceError: must call super constructor before using 'this' in derived class constructor
+    </script>
+</body>
+</html>

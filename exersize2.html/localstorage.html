@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //setting a items as key and value to tje localstorage
+        localStorage.setItem("name", "aishwarya");
+        localStorage.setItem("rollno", "2");
+        localStorage.setItem("schoolinng", "ke borad");
+        localStorage.setItem("boyfriend", "sachin");
+        //getitem by givving the key
+        localStorage.getItem("name")
+        "aishwarya"
+        //getitem by the index of key
+        localStorage.key(0)
+        "name"//untill if completed with index it will be give as null
+        //clear the whole content of key and value
+        let key=prompt("enter a key");
+        let value=prompt("enter a value");
+        
+        if(key==0){
+            localStorage.clear();
+        }else{
+            localStorage.setItem(`${key}` ,`${value}`);
+        }
+        //remove an item with key
+       if(key=="red" || key=="blue"){
+        localStorage.removeItem(key);
+       }
+
+       //important
+       window.onstorage=()=>{
+            alert("changed");
+        }
+
+//note that key and values are in string in the localstorage 
+//note if we refresh it will not deleted
+    </script>
+</body>
+
+</html>

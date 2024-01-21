@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     class complex{
+    //         constructor(real,imagenaory){
+    //             this.real=real;
+    //             this.imagenaory=imagenaory;
+    //         }
+    //         add(num){
+    //             this.real= this.real+num.real;
+    //        this.imagenaory= this.imagenaory+num.imagenaory;
+    //         }
+            
+    //     }
+    //     let a=new complex(2,4);
+    //     let b=new complex(3,6);
+    //    a.add(b);
+    //     console.log(`${a.real}+${a.imagenaory}i`);
+
+
+    //2nd example
+    //override the perent method in child class
+    // class human{
+    //     constructor(name,food){
+    //         this.name=name;
+    //         this.food=food;
+    //     }
+    //     walk(){
+    //           console.log("i am human walking on rood");
+    //     }
+    // }
+    // class student extends human{
+    //     walk(){
+    //         console.log(this.name+"i am student walking on rood");
+    //     }
+    // }
+    // let a=new student("aishwarya");
+    
+    // console.log(a.walk());
+    // console.log(a instanceof human);//a is object of child so true
+    // console.log(a instanceof student);//true
+
+
+    //creat a complex adding two number
+    class complex{
+        constructor(real,imaginary){
+            this.real=real;
+            this.imaginary=imaginary;
+        }
+        add(num){
+         this.real =  this.real+num.real;
+           this.imaginary= this.real+num.imaginary;
+        }
+       
+    }
+    let a=new complex(2,2);
+    let b=new complex(3,6);
+    a.add(b);
+    console.log(`${a.real}+${a.imaginary}i`)
+    </script>
+</body>
+</html>
